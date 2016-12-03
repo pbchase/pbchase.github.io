@@ -1,6 +1,6 @@
 ---
 title: "Moveable stoppers"
-excerpt: "Micro adjustments, bar spinning and cruising"
+excerpt: "Micro adjustments, free spinning bars and comfortable cruising"
 tags:
   - kites
   - land kiting
@@ -9,7 +9,11 @@ tags:
   - movable stoppers
 ---
 
-## Moveable stoppers
+![](/images/IMG_20131013_135514.jpg "The first batch of stoppers")
+
+IMG_20131013_135514
+
+## Early inspiration and exploration
 
 I my early exploration into bar construction I saw posts from Mark Groshens on Power Kite Forum describing _longthrow_ bar construction. The concept is to build a control system with lots of travel for the bar. This allows for a large and rapid depower. In some designs there is enough travel to reach zero bar pressure and the absolute maximum depower the kite can provide. 
 
@@ -37,6 +41,7 @@ Another more subtle issue is the minimum distance between the block and the clea
 
 ![](/images/IMG_20161203_091836.jpg "Stopper block that can't quit reach the cleat")
 
+
 ## The Ball
 
 The ball on the bottom of the stopper controls the interface of the stopper and the bar. Bringing the trim lines back together assures they can never press against the bore of the bar. The trim lines won't impede travel or spin. Nor will they cause unnecessary abrasion of the bar's bore.
@@ -44,6 +49,21 @@ The ball on the bottom of the stopper controls the interface of the stopper and 
 Using a sphere and a round rim on the kite-side of the bar's bore assures the bar can self-center on the trim line and spin freely. The low friction of the Delrin further reduces impediments to a free spinning bar. These features allow the bar to spin freely even under high load if that is desired.  
 
 ![](/images/IMG_20161203_100220.jpg "Stopper ball and bar")
+
+
+## Yes, but how does it fly?
+
+The result of this work is a stopper that stays where you leave it. Repeated slams of the bar against the stopper do not move it. 
+In steady winds and long runs you can set it where you want it and fly the kite with two fingers on the tip of the bar. If you are on a 20 minute tack this can be quite a relief. 
+
+If you are flying at full speed you can set it just shy of where you would start sliding and fine tune the position with your hand pulling the bar just millimeters off the stopper. Should you loose your grip or have to let go for a moment the bar will rest on the stopper at near full load while you readjust.  
+
+If I'm jibing a lot I'll often set the stopper out a bit so that I have a moderate amount of load even when I let go of the bar.  I'll let go of the bar briefly during the jibe as the kite is passing through the power zone. At the same time I kick the bar to untwist the lines. Moments later the twists are out of the line and the kite has passed through the power zone. Before the kite reaches the edge of the wind window and I grab the bar and trim the kite for cruising again.
+
+If conditions are gusty push the stopper all the way to the cleat. This gives you access to the full range of depower when you let go of the bar. 
+
+If you hand your kite to a shorter flying who lacks your wing span, the stopper is quick hack to make the adjustments they need. Just pull the stopper in a little, trim the kite in to match via the cleat and give the kite to the other pilot.  They might not be able to reach the cleat, but the bar and stopper will never be too far away. The stopper is never be any further away than you can push it.  
+
 
 ## Where do we go from here?
 
