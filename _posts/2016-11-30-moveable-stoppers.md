@@ -11,8 +11,6 @@ tags:
 
 ![](/images/IMG_20131013_135514.jpg "The first batch of stoppers")
 
-IMG_20131013_135514
-
 ## Early inspiration and exploration
 
 I my early exploration into bar construction I saw posts from Mark Groshens on Power Kite Forum describing _longthrow_ bar construction. The concept is to build a control system with lots of travel for the bar. This allows for a large and rapid depower. In some designs there is enough travel to reach zero bar pressure and the absolute maximum depower the kite can provide. 
