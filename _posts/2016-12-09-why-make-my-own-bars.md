@@ -1,6 +1,6 @@
 ---
 title: "How I started carving my own bars"
-excerpt: "How complicated could a handle be, really?"
+excerpt: "I really enjoy the wooden kite bars I have made. They're much more comfortable then any of the commercial bars I used, but they were never part of the plan. "
 tags:
   - kites
   - land kiting
@@ -15,7 +15,7 @@ tags:
 
 ## A few of my not-so-favorite things
 
-I really enjoy the wooden kite bars I have made. They're much more comfortable then any of the commercial bars I used, they spin when I want them to spin, they don't bind, and they are beautiful. Yet the were never part of the plan. The whole thing started on a lark. I blame Tim Elverston. 
+I really enjoy the wooden kite bars I have made. They're much more comfortable then any of the commercial bars I used, they spin when I want them to spin, they don't bind, and they are beautiful. Yet they were never part of the plan. The whole thing started on a lark. I blame Tim Elverston. 
 
 When I first started hacking on bar builds I used whatever bars I had available. I was recycling used gear form kites that came ready-to-fly and old bars I purchased off people on Power Kite Forum. It was a hodge-podge of brands and models. This gave me an opportunity to see what worked and what didn't work so well. 
 
