@@ -90,7 +90,7 @@ author:
   vine             :
   weibo            :
   xing             :
-  youtube          : 
+  youtube          :
 
 
 # Reading Files
@@ -120,6 +120,10 @@ exclude:
   - Rakefile
   - README
   - tmp
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
 keep_files:
   - .git
   - .svn
