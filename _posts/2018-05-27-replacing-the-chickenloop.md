@@ -1,6 +1,6 @@
 ---
 title: "Replacing the chickenloop"
-excerpt: ""
+excerpt: "Alternative quick release options for kite bars"
 tags:
   - kites
   - land kiting
