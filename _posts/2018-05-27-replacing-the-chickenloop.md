@@ -21,7 +21,7 @@ Most kite control bars use a feature called a _chicken loop_ to connect the bar 
 
 Whereas these are valuable features for most water kiters, some of them are not valuable to a kite buggier. A buggier needs the reliable connection and emergency disconnect features just like a water kiter. The swivel is often helpful. A flag line pathway is required if a flag line will be used. Optimizing for these features can lead to a different solution from that used by water kiters and land boarders.
 
-One liability of the chicken loop is its length. It places the bar and all of its controls further away from the flier. The reduces bar through or makes reaching the trim control more difficult and at times more dangerous. That effect is exacerbated by the hook the chicken loop connects to. Any design that can bring the bar closer to the flier's navel could offer advantages of increased control and safety.
+One liability of the chicken loop is its length. It places the bar and all of its controls further away from the flier. This either reduces the bar throw or makes reaching the trim control more difficult and at times more dangerous. That effect is exacerbated by the hook the chicken loop connects to. Any design that can bring the bar closer to the flier's navel could offer advantages of increased control and safety.
 
 Multiple tests with reduced-size chicken loops brought the bar closer, but I could not eliminate much of the distance between the pilot and the bar added by the chickenloop. So I dispensed with the chickenloop and started testing quick-release shackles in its place.
 
