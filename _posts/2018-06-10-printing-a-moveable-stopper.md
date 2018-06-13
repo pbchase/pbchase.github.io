@@ -26,8 +26,10 @@ The other advantage of 3D printing is the freedom it affords to the design when 
 
 ![](/images/DSC_0194.jpg "Block and ball assembled with trim line installed. Flag line is not installed.")
 
-The models shown here use curved interior passages for the path the bungie follows to join the pieces. The curving paths improve the clearance between features and provide a more continuous path. The bungie moves freely and can be threaded without a fid. The novel shapes of the passage ways and the improved control of their position, allows the features within a component to be closer to one another without risk of interference. 
+The models shown here use curved interior passages for the path the bungie follows to join the pieces. The curving paths provide a more continuous path for the bungie and improve the clearance between features. The bungie moves freely and can be threaded without a fid. The novel shapes of the passageways and the improved control of their position allows the features within a component to be closer to one another without risk of interference.
 
 ![](/images/stopper_ball_with_toroidal_paths_for_bungie.png "Toruses define the paths for the bungies within the ball")
 
 ![](/images/stopper_block_v3_bungie_path.png "A torus defines the bungie path in the block")
+
+The designs shown here are accessible at [https://github.com/pbchase/kite_bar_parts/tree/2018-06-10](https://github.com/pbchase/kite_bar_parts/tree/2018-06-10). The parts printed here are _stopper\_ball_ and _stopper\_block\_v3_. The latest versions of these and other models are always available [https://github.com/pbchase/kite_bar_parts/](https://github.com/pbchase/kite_bar_parts/)
