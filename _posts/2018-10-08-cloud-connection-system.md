@@ -1,6 +1,6 @@
 ---
 title: "Board Riding Maui's Cloud Connection System"
-excerpt: ""
+excerpt: "The mention of the Board Riding Maui bar--the Cloud Connection System or CCS--reminded me how impressed I am with that design... "
 tags:
   - kites
   - land kiting
@@ -21,11 +21,11 @@ The other day Steve said:
     something like BRM, but might just go with a separate flag line that runs
     through the bar (and is attached to a top line 10m up or so)...
 
-The mention of the Board Riding Maui bar--the Cloud Connection System or CCS--reminded me how impressed I am with that design. I rewatched the [2015 video about the CCS](https://www.youtube.com/watch?v=CDhBvCFhT9A) and then I wrote a tome for Steve. For those that don't know me, understand that I am a land kiter. Specifically, I'm a buggy rider. So temper your opinions of my opinions with that in mind. Steve kites on both land and water. He is amphibious. 
+The mention of the Board Riding Maui bar--the Cloud Connection System or CCS--reminded me how impressed I am with that design. I rewatched the [2015 video about the CCS](https://www.youtube.com/watch?v=CDhBvCFhT9A) and then I wrote the following tome for Steve. For those that don't know me, understand that I am a land kiter. Specifically, I'm a buggy rider. So temper your opinions of my opinions with that. Steve kites on both land and water. He's amphibious. 
 
-## There's  a lot to like
+## There's a lot to like about the CCS
 
-Greg's point about moving the bar closer to your body is perhaps the most important thing in his entire pitch. Every millimeter from you to the pulled-in bar is bar throw wasted. He is right that it is especially hard on women, but the additional reach benefits everyone no matter how long their arms are.  The bar hook and chicken loop system is for a particular audience. If you are not part of that audience, then say goodbye to the Hook and Loop. This of course exposes you to the problem of how to source gear as Hook and Loop is most of the market, but the first step is always to admit you have a problem.
+Greg's point about moving the bar closer to your body is perhaps the most important thing in his entire pitch. Every millimeter from you to the pulled-in bar is bar throw wasted. He is right that it is especially hard on women, but the additional reach benefits everyone no matter how long their arms.  The bar hook and chicken loop system is for a particular audience. If you are not part of that audience, then say goodbye to the Hook and Loop. This of course exposes you to the problem of how to source gear as Hook and Loop is most of the market, but the first step is always to admit you have a problem.
 
 After that, I really admire the simplicity of what he was designed. It has all the safety features of modern kite boarding gear and then some. The massive travel on the bar provides a good margin of safety. The first release is simple, low tech and has good odds of a clean release. The second release is just as low tech and physically very close to the first. It's nice design that should reduce the risk of operator error in crisis.
 
