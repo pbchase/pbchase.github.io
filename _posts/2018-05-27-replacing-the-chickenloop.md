@@ -15,6 +15,8 @@ tags:
 
 ![](/images/DSC_0113.jpg "Attaching a kite bar to a harness with no chickenloop")
 
+_Note: Since writing this article I have made improvements that obsolete the use of Wichard snap shackle the handles I show here. See [Harness and Quick-Release upgrades](../harness-and-qr-upgrades/) for details about the revised design._
+
 ## Alternative quick release options for kite bars
 
 Most kite control bars use a feature called a _chicken loop_ to connect the bar to the harness the kite flier is wearing. It's a venerable system that has evolved to meet the needs of water kiters. Beyond the need to connect the bar and harness, the chicken loop also provides for a quick release mechanism to separate the bar from the harness hook in an emergency and in normal landing. To facilitate unhooked tricks, the chicken loop allows for easy hooking and unhooking while in flight. Some chicken loops incorporate a swivel to allow the flier to remove line twist. Some provide a now-twisting pathway for a flag line.
