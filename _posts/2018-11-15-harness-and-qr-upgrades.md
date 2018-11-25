@@ -1,6 +1,6 @@
 ---
 title: "Harness and Quick-Release upgrades"
-excerpt: ""
+excerpt: "A better snap shackle and a better harness prevent unplanned releases and increase comfort"
 tags:
   - kites
   - land kiting
@@ -32,7 +32,7 @@ In a 2 hour test of continuous tacking and jibing, I did not have a single unpla
 
 As the Wichard snap shackle uses a solid bail, I had to unpick my old harness to swap in the Tylaska shackle. I took the opportunity to redesign my harness to improve the fit and address some issues I had with the old harness. The old harness spun the waistband considerably during tacks and jibes. Under load, this repeated spinning would wear on my hips. The new design moves the shackle down to the center of the figure-eight defined by the two leg loops. This does a better job of transferring the lateral load directly to the legs. 
 
-At the front center of the harness, there are two layers of 2-inch webbing. As two layers of webbing are too much material to fit through the clevis of the shackle, I attached the clevis only to the front layer. The front layer is firmly affixed to the back layers and the leg loops by the stitching on the ends of the legs loops left and right of the front center of the harness. To reduce the lateral movement of the shackle on the front face of the harness, the shackle is pinned between two stitched tacks that join the front and back layer. The back layer provides a bit of padding between the clevis and the belly. 
+At the front center of the harness, there are two layers of 2-inch webbing. As two layers of webbing are too much material to fit through the clevis of the shackle, I attached the clevis only to the front layer. The front layer is firmly affixed to the back layers and the leg loops by the stitching on the ends of the legs loops left and right of the front center of the harness. To reduce the lateral movement of the shackle on the front face of the harness, the shackle is pinned between two stitched tack points that join the front and back layer. The back layer also provides a bit of padding between the clevis and the belly. 
 
 ![](/images/DSC_0065.jpg "Assembled harness")
 
