@@ -91,21 +91,18 @@ The routing path for the bungee controls the ball's orientation relative to the 
 
 ## Bar assembly and threading line
 
-All of these components are assembled on a trimline of 5mm Amsteel Blue. The trim line is about 2300mm in length. The trim line magnets have to be affixed to one end. The other end will need to be threaded through some long, narrow passage ways in the cleat and stopper. To simplify this work, a bit of insignia is wrapped around the end of the trimline. Cut about 4 lines diameters (20mm) wide and 45mm long, this wrap of insignia cloth grips tightly to the trim line and forms 35 mm tail of flat cloth on the line.  (dimensions???). 
+All of these components are assembled on a trimline of 5mm Amsteel Blue. The trim line is about 2300mm in length. The trim line magnets have to be affixed to one end. The other end will need to be threaded through some long, narrow passage ways in the cleat and stopper. To simplify this work, a bit of insignia cloth is wrapped around the end of the trimline. Cut a strip 20 mm wide and 65mm long. Wrap the insignia cloth tightly around the last 20mm of the trimline, forming a tail of flat cloth 45mm long on the end of the line.
 
-To thread the trim line, put the threaded end through the cleat entering at the jam side. Exit the cleat at the top end, routing through the 
+To thread the trim line, put the threaded end through the cleat entering at the jam side. Exit the cleat at the top end, routing up through the low friction ring of the separation block. Reenter the cleat and go through its serpentine path. Leave just enough line above the cleat to provide the desired trim. Route the line through the stopper block, then ball. Go down through the center of the bar, though a ball to retain the trim line in the bar and back through the center bore of the bar. Go back through the stopper ball and then the stopper block. slide the stopper ball down towards the bar to leave lots of slack above the stopper. At this point make sure the line passing through the cleat's serpentine has 5 cm of loop on each side of the cleat. Then route the loose end of the trim line _up_ through the cleat's serpentine path. YOu want to make large parallel lops of line going back and forth through the serptine. Route about 5cm of the trim out of the top of the cleat. Route the 5cm of trim line tail through the loops along the side of the serpentine. Make sure the insignia cloth tail is also routed through these loops.  Holding these pieces in place, pull the trim line slack down through the cleat grooming the lines as you go. With the trimline tight in the serpentine path, have a friend help you put the trim line in tension.  Then slide the stopper up and down the trim lines to even up the slack in the pair of trim lines.
 
-* Universal solution
-* Standard dimensions
+You'll want to verify you can reach the trimline end under normal flying conditions. To do this, put your harness on, clip the trim line into the harness and have a friend pull on the trim line by the separation block. They should pull the bar to your side about 30 degrees above horizontal. Verify you can reach the jaws of the cleat and grab the trim line tail without over-reaching. If you have to stretch to reach the tail, the cleat is too far away. You can move it closer by moving some of the trim line up through the cleat. For each centimeter you need to move the cleat down, you'll need to move two centimeters of line through the cleat.
+
 
 ## Successful Variants 
 
-* Single trim line
-* Two-part trim line
+What I have described above uses a single, continuous piece of 5mm Amsteel Blue about 2300mm long. I have also had good success using a shorter segment of Amsteel below the cleat with a 6mm line above the cleat to form the trim line. The lines are joined by loops on spliced ends at the top of the cleat. The 6mm line is more comfortable to grip, but this design doesn't allow for much variation of the cleat position on the trim line. If the cleat position is wrong, a new trim line would need to be made.
 
 
 ## Failed Variants
 
-** Long trim line tails - aka _Racing bar_
-** 4-to-1 mechanical advantage
-
+I have also tried variants of this rig that offer longer trim line tails. One used the standard 2-1 mechanical advantage decribed above but had a longer tail that coudl be reached at the bar even when trimmed out. The other used a 4-to-1 mechanical advantage that provided minimal tail when trimmed out. In each case, the additional length of trim line was a tangle hazard. It compromised bar spin, and trim control. I have phased these variants out of my gear in favor of the 2-to-1 mechanical advantage with a short, magnetized trimline end described above.
