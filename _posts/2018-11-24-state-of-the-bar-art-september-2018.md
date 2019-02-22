@@ -38,13 +38,17 @@ To provide an alternative way to tether the trimline end, I also placed another 
 
 ## Separation blocks
 
-I refer to the juncture of the flying lines, trimline and flag line as the _separation block_. It has narrow passagesways for the flying to pass through, room to anchor the flying lines with larkshead stoppers, and a pulley for the trim line. In my earlier designs I used a segment of 5mm Spectra/Dyneema as the pulley. While this works, the trim line slowly saws through the "pulley". Despite the block's relative simplicity, machining it from Delrin is time consuming and error prone. 
+I refer to the juncture of the flying lines, trimline and flag line as the _separation block_. It has narrow passage ways for the flying to pass through, room to anchor the flying lines with larkshead stoppers, and a pulley for the trim line. In my earlier designs I used a segment of 5mm Spectra/Dyneema as the pulley. While this works, the trim line slowly saws through the "pulley". Despite the block's relative simplicity, machining it from Delrin is time consuming and error prone.
 
 ![](/images/old-and-busted-separation-block.jpg "Old-and-busted separation block")
 
 To address flaws in the pulley and simplify the manufacture of the block, I now 3D-print the separation block. The new design is smaller, more comfortable to grip and easier to make. Instead of a loop of line for the pulley I use a low-friction ring held by a line that passes through a single hole in the block. The design is well balanced, has low friction for the trim line won't wear out as fast. 
 
 ![](/images/new-hotness-separation-block.jpg "Modern separation block with ring")
+
+The separation block requires flying lines with clean, narrow ends. This allows the flagged flying line to move rapidly and reliably through the separation block and the rest of the rigging during a flag-out.
+
+The clean, narrow flying line ends are best achieved by using hollow core flying line with spliced end loops. This creates the narrowest possible end with the least possible snags. It's possible to get reasonable results by stitching folded line ends together or by tying a 200# - 300# Q-Powerline Pro line, but the spliced ends are the best method. Sleeved lines will not work in _any_ form.
 
 
 ## Elastic flag line
@@ -93,16 +97,44 @@ The routing path for the bungee controls the ball's orientation relative to the 
 
 All of these components are assembled on a trimline of 5mm Amsteel Blue. The trim line is about 2300mm in length. The trim line magnets have to be affixed to one end. The other end will need to be threaded through some long, narrow passage ways in the cleat and stopper. To simplify this work, a bit of insignia cloth is wrapped around the end of the trimline. Cut a strip 20 mm wide and 65mm long. Wrap the insignia cloth tightly around the last 20mm of the trimline, forming a tail of flat cloth 45mm long on the end of the line.
 
-To thread the trim line, put the threaded end through the cleat entering at the jam side. Exit the cleat at the top end, routing up through the low friction ring of the separation block. Reenter the cleat and go through its serpentine path. Leave just enough line above the cleat to provide the desired trim. Route the line through the stopper block, then ball. Go down through the center of the bar, though a ball to retain the trim line in the bar and back through the center bore of the bar. Go back through the stopper ball and then the stopper block. slide the stopper ball down towards the bar to leave lots of slack above the stopper. At this point make sure the line passing through the cleat's serpentine has 5 cm of loop on each side of the cleat. Then route the loose end of the trim line _up_ through the cleat's serpentine path. YOu want to make large parallel lops of line going back and forth through the serptine. Route about 5cm of the trim out of the top of the cleat. Route the 5cm of trim line tail through the loops along the side of the serpentine. Make sure the insignia cloth tail is also routed through these loops.  Holding these pieces in place, pull the trim line slack down through the cleat grooming the lines as you go. With the trimline tight in the serpentine path, have a friend help you put the trim line in tension.  Then slide the stopper up and down the trim lines to even up the slack in the pair of trim lines.
+![](/images/trimline_end_with_wrap.jpg "Trim line end with insignia cloth wrap ready for threading")
+
+To thread the trim line, put the threaded end through the cleat entering at the jam side. Exit the cleat at the top end, routing up through the low friction ring of the separation block. Reenter the cleat and go through its serpentine path. Leave just enough line above the cleat to provide the desired trim. Route the line through the stopper block, then ball. Go down through the center of the bar, though a ball to retain the trim line in the bar and back through the center bore of the bar. Go back through the stopper ball and then the stopper block. slide the stopper ball down towards the bar to leave lots of slack above the stopper. At this point make sure the line passing through the cleat's serpentine has 5 cm of loop on each side of the cleat.
+
+
+Then route the loose end of the trim line _up_ through the cleat's serpentine path. You want to make large parallel loops of line going back and forth through the serptine. Route about 5cm of the trim out of the top of the cleat.
+
+![](/images/threading_the_cleat_1.jpg "Aerocleat threaded with both passes of trim line")
+
+Route the 5cm of trim line tail through the loops along the side of the serpentine.
+
+![](/images/threading_the_cleat_2.jpg "Thread the trimline tail through the loops")
+
+Make sure the insignia cloth tail is also routed through these loops. Holding these pieces in place, pull the trim line slack down through the cleat grooming the lines as you go.
+
+![](/images/threading_the_cleat_3.jpg "Take the slack out of the trimline loops 1 of 3")
+![](/images/threading_the_cleat_4.jpg "Take the slack out of the trimline loops 2 of 3")
+![](/images/threading_the_cleat_5.jpg "Take the slack out of the trimline loops 3 of 3")
+
+
+With the trimline tight in the serpentine path, have a friend help you put the trim line in tension.  Then slide the stopper up and down the trim lines to even up the slack in the pair of trim lines.
 
 You'll want to verify you can reach the trimline end under normal flying conditions. To do this, put your harness on, clip the trim line into the harness and have a friend pull on the trim line by the separation block. They should pull the bar to your side about 30 degrees above horizontal. Verify you can reach the jaws of the cleat and grab the trim line tail without over-reaching. If you have to stretch to reach the tail, the cleat is too far away. You can move it closer by moving some of the trim line up through the cleat. For each centimeter you need to move the cleat down, you'll need to move two centimeters of line through the cleat.
+
+## Attaching the flying lines
+
+(Attach right hand-line to nubbin')
+
+(route left hand line through separation block, stopper block and bar. Attach flag line with a larks head.  Pull flag line into bar with flyng line)
+
+![](/images/upper_section_of_assembled_bar.jpg "Upper section of assembled bar")
 
 
 ## Successful Variants 
 
-What I have described above uses a single, continuous piece of 5mm Amsteel Blue about 2300mm long. I have also had good success using a shorter segment of Amsteel below the cleat with a 6mm line above the cleat to form the trim line. The lines are joined by loops on spliced ends at the top of the cleat. The 6mm line is more comfortable to grip, but this design doesn't allow for much variation of the cleat position on the trim line. If the cleat position is wrong, a new trim line would need to be made.
+What I have described above uses a single, continuous piece of 5mm Amsteel Blue about 2300mm long. I have also had good success using a shorter segment of Amsteel below the cleat with a 6mm line above the cleat to form the trim line. The lines are joined by loops on spliced ends at the top of the cleat. The 6mm line is more comfortable to grip, but this design doesn't allow for much variation of the cleat position on the trim line. If the cleat position is wrong, a new trim line would need to be made with a more favorable ratio of 5mm to 6mm line.
 
 
 ## Failed Variants
 
-I have also tried variants of this rig that offer longer trim line tails. One used the standard 2-1 mechanical advantage decribed above but had a longer tail that coudl be reached at the bar even when trimmed out. The other used a 4-to-1 mechanical advantage that provided minimal tail when trimmed out. In each case, the additional length of trim line was a tangle hazard. It compromised bar spin, and trim control. I have phased these variants out of my gear in favor of the 2-to-1 mechanical advantage with a short, magnetized trimline end described above.
+I have also tried variants of this rig that offer longer trim line tails. One used the standard 2-1 mechanical advantage decribed above but had a longer tail that coudl be reached at the bar even when trimmed out. The other used a 4-to-1 mechanical advantage that provided minimal tail when trimmed out. In each case, the additional length of trim line was a tangle hazard. The extra line could easily compromise bar spin, trim control, and kite steering. I have phased these variants out of my gear in favor of the 2-to-1 mechanical advantage with a short, magnetized trimline end described above.
