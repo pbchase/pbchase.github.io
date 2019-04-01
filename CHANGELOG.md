@@ -5,6 +5,11 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
 
+## [pbchase-0.2.1] - 2019-03-31
+### Changed
+- Add header for steering lines in 2018-11-24-state-of-the-bar-art-september-2018.md
+
+
 ## [pbchase-0.2.0] - 2019-03-31
 ### Added
 - 2018-11-24-state-of-the-bar-art-september-2018.md
