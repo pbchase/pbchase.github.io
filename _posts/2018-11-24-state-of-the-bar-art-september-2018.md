@@ -38,7 +38,7 @@ To provide an alternative way to tether the trimline end, I also placed another 
 
 ## Separation blocks
 
-I refer to the juncture of the flying lines, trimline and flag line as the _separation block_. It has narrow passage ways for the flying to pass through, room to anchor the flying lines with larkshead stoppers, and a pulley for the trim line. In my earlier designs I used a segment of 5mm Spectra/Dyneema as the pulley. While this works, the trim line slowly saws through the "pulley". Despite the block's relative simplicity, machining it from Delrin is time consuming and error prone.
+I refer to the juncture of the flying lines, trimline and flag line as the _separation block_. It has narrow passage ways for the flying to pass through, room to anchor the flying lines with larkshead stoppers, and a pulley for the trim line. In my earlier designs I used a segment of 4mm Spectra/Dyneema as the pulley. While this works, the trim line slowly saws through the "pulley". Despite the block's relative simplicity, machining it from Delrin is time consuming and error prone.
 
 ![](/images/old-and-busted-separation-block.jpg "Old-and-busted separation block")
 
@@ -95,7 +95,7 @@ The routing path for the bungee controls the ball's orientation relative to the 
 
 ## Bar assembly and threading line
 
-All of these components are assembled on a trimline of 5mm Amsteel Blue. The trim line is 2275mm in length. The trim line magnets have to be affixed to one end. The other end will need to be threaded through some long, narrow passageways in the cleat and stopper. To simplify this work, wrap a bit of insignia cloth around the end of the trimline. Cut a strip 20 mm wide and 65mm long. Wrap the insignia cloth tightly around the last 20mm of the trimline, forming a tail of flat cloth 45mm long on the end of the line.
+All of these components are assembled on a trimline of 4mm Amsteel Blue. In some bars I have tried 5mm Amsteel, but the 4mm is easier to route through the cleat. The trim line is 2275mm in length. The trim line magnets have to be affixed to one end. The other end will need to be threaded through some long, narrow passageways in the cleat and stopper. To simplify this work, wrap a bit of insignia cloth around the end of the trimline. Cut a strip 20 mm wide and 65mm long. Wrap the insignia cloth tightly around the last 20mm of the trimline, forming a tail of flat cloth 45mm long on the end of the line.
 
 ![](/images/trimline_end_with_wrap.jpg "Trim line end with insignia cloth wrap ready for threading")
 
@@ -142,9 +142,9 @@ With all the lines attached, the trim control let all the way out and the bar pu
 
 ## Successful Variants
 
-What I have described above uses a single, continuous piece of 5mm Amsteel Blue about 2275mm long. I have also had good success using a shorter segment of Amsteel below the cleat with a 6mm line above the cleat to form the trim line. The lines are joined by loops on spliced ends at the top of the cleat. The 6mm line is more comfortable to grip, but this design doesn't allow for much variation of the cleat position on the trim line. If the cleat position is wrong, a new trim line would need to be made with a more favorable ratio of 5mm to 6mm line.
+What I have described above uses a single, continuous piece of 4mm Amsteel Blue about 2275mm long. I have also had good success using a shorter segment of Amsteel below the cleat with a 6mm line above the cleat to form the trim line. The lines are joined by loops on spliced ends at the top of the cleat. The 6mm line is more comfortable to grip, but this design doesn't allow for much variation of the cleat position on the trim line. If the cleat position is wrong, a new trim line would need to be made with a more favorable ratio of 4mm to 6mm line.
 
 
 ## Failed Variants
 
-I have also tried variants of this rig that offer longer trim line tails. One used the standard 2-1 mechanical advantage decribed above but had a longer tail that could be reached at the bar even when trimmed out. The other used a 4-to-1 mechanical advantage that provided minimal tail when trimmed out. In each case, the additional length of trim line was a tangle hazard. The extra line could easily compromise bar spin, trim control, and kite steering. I have phased these variants out of my gear in favor of the 2-to-1 mechanical advantage with a short, magnetized trimline end described above.
+I have also tried variants of this rig that offer longer trim line tails. One used the standard 2-1 mechanical advantage described above but had a longer tail that could be reached at the bar even when trimmed out. The other used a 4-to-1 mechanical advantage that provided minimal tail when trimmed out. In each case, the additional length of trim line was a tangle hazard. The extra line could easily compromise bar spin, trim control, and kite steering. I have phased these variants out of my gear in favor of the 2-to-1 mechanical advantage with the short, magnetized trimline end described above.
