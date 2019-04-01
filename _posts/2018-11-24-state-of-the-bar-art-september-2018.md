@@ -131,6 +131,8 @@ Route the other flying line through the remaining hole in the separation block. 
 
 ![](/images/upper_section_of_assembled_bar.jpg "Upper section of assembled bar")
 
+## Steering lines
+
 For the back lines of the kite, the bar is equipped with a short pigtails one each end. Each pigtail is made from 350mm of 600# Spectra or 1/16 inch Ultrex folded in half and tied with an overhand knot. Once tied, the working length of the pigtail is about 145mm. Each pigtail is pulled through a drilled hole at the end of the bar leaving the knot on the pilot side.
 
 The steering lines are attached to the pigtails via long leaders of 600# Spectra or 1/16 inch Ultrex. Each leader is made from 1055mm of line with a spliced and stitched loop on one end and an overhand knot on the other. The effective length of a leader from loop end to knot is 810mm.
@@ -140,11 +142,11 @@ Use a larkshead to attach the loop of each leader to the loop of its steering li
 With all the lines attached, the trim control let all the way out and the bar pulled all the way back, the tips of all four flying lines should converge to the same point.
 
 
-## Successful Variants
+## Successful variants
 
 What I have described above uses a single, continuous piece of 4mm Amsteel Blue about 2275mm long. I have also had good success using a shorter segment of Amsteel below the cleat with a 6mm line above the cleat to form the trim line. The lines are joined by loops on spliced ends at the top of the cleat. The 6mm line is more comfortable to grip, but this design doesn't allow for much variation of the cleat position on the trim line. If the cleat position is wrong, a new trim line would need to be made with a more favorable ratio of 4mm to 6mm line.
 
 
-## Failed Variants
+## Failed variants
 
 I have also tried variants of this rig that offer longer trim line tails. One used the standard 2-1 mechanical advantage described above but had a longer tail that could be reached at the bar even when trimmed out. The other used a 4-to-1 mechanical advantage that provided minimal tail when trimmed out. In each case, the additional length of trim line was a tangle hazard. The extra line could easily compromise bar spin, trim control, and kite steering. I have phased these variants out of my gear in favor of the 2-to-1 mechanical advantage with the short, magnetized trimline end described above.
