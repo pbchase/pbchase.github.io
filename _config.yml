@@ -21,7 +21,7 @@ title                    : "A few of my favorite things"
 title_separator          : "-"
 name                     : "Philip Chase"
 description              : "Anything that interests me, but a lot of thoughts about making things"
-url                      : https://philipbchase.com
+url                      : http://philipbchase.com
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
