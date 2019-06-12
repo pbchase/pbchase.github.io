@@ -5,7 +5,15 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
 
-## [pbchase-0.3.0] - 2019-06-02
+## [0.4.0] - 2019-06-11
+### Added
+- Add 2019-06-04-no-more-stoppers.md (Philip Chase)
+
+### Changed
+- Upgrade to minimal_mistakes 4.16.4 and jekyll 3.8.5
+
+
+## [0.3.0] - 2019-06-02
 ### Added
 - Add 2019-06-01-buggy-bar-build-book.md and supporting files (Philip Chase)
 
