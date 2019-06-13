@@ -4,6 +4,12 @@ All notable changes to the pbchase's web site will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), 
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
+## [0.4.1] - 2019-06-12
+### Changed
+- Add an update and fix typos in buggy-bar-build-book (Philip Chase)
+- Add update and fix typo in state-of-the-bar-art-september-2018 (Philip Chase)
+- Fix broken image in 2018-11-24-state-of-the-bar-art-september-2018 (Philip Chase)
+
 
 ## [0.4.0] - 2019-06-11
 ### Added
