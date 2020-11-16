@@ -26,5 +26,6 @@ gem "minimal-mistakes-jekyll"
 #   gem "jekyll-include-cache"
 #
 # If you have any other plugins, put them here!
+gem "jemoji"
 group :jekyll_plugins do
 end
