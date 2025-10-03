@@ -1,0 +1,945 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.8.24">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Philip Chase">
+<meta name="dcterms.date" content="2025-10-02">
+<meta name="description" content="This is how you build a Buggy Bar.">
+
+<title>Buggy Bar Book</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dc55a5b9e770e841cd82e46aadbfb9b0.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-8a1abf3b56f0fb35c20bbdbe101e9af5.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+</head>
+
+<body class="nav-sidebar floating quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Buggy Bar Book</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header sidebar-header-stacked">
+      <a href="./index.html" class="sidebar-logo-link">
+      </a>
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">Buggy Bar Book</a> 
+        <div class="sidebar-tools-main">
+    <a href="https://github.com/pbchase/buggy_bar" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-github"></i></a>
+</div>
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Buggy Bar Book</span></span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview"><span class="header-section-number">1</span> Overview</a>
+  <ul class="collapse">
+  <li><a href="#bill-of-materials" id="toc-bill-of-materials" class="nav-link" data-scroll-target="#bill-of-materials"><span class="header-section-number">1.1</span> Bill of materials</a></li>
+  <li><a href="#tools-required" id="toc-tools-required" class="nav-link" data-scroll-target="#tools-required"><span class="header-section-number">1.2</span> Tools required</a></li>
+  </ul></li>
+  <li><a href="#component-construction" id="toc-component-construction" class="nav-link" data-scroll-target="#component-construction"><span class="header-section-number">2</span> Component construction</a>
+  <ul class="collapse">
+  <li><a href="#control-bar" id="toc-control-bar" class="nav-link" data-scroll-target="#control-bar"><span class="header-section-number">2.1</span> Control bar</a></li>
+  <li><a href="#trim-line" id="toc-trim-line" class="nav-link" data-scroll-target="#trim-line"><span class="header-section-number">2.2</span> Trim Line</a>
+  <ul class="collapse">
+  <li><a href="#prepping-the-trim-line" id="toc-prepping-the-trim-line" class="nav-link" data-scroll-target="#prepping-the-trim-line"><span class="header-section-number">2.2.1</span> Prepping the trim line</a></li>
+  <li><a href="#upper-end-of-the-trim-line" id="toc-upper-end-of-the-trim-line" class="nav-link" data-scroll-target="#upper-end-of-the-trim-line"><span class="header-section-number">2.2.2</span> Upper end of the trim line</a></li>
+  <li><a href="#adding-the-trim-line-core" id="toc-adding-the-trim-line-core" class="nav-link" data-scroll-target="#adding-the-trim-line-core"><span class="header-section-number">2.2.3</span> Adding the trim line core</a></li>
+  <li><a href="#forming-the-magnetic-trim-line-tail" id="toc-forming-the-magnetic-trim-line-tail" class="nav-link" data-scroll-target="#forming-the-magnetic-trim-line-tail"><span class="header-section-number">2.2.4</span> Forming the magnetic trim line tail</a></li>
+  <li><a href="#knots-and-balls" id="toc-knots-and-balls" class="nav-link" data-scroll-target="#knots-and-balls"><span class="header-section-number">2.2.5</span> Knots and Balls</a></li>
+  <li><a href="#trim-line-loop" id="toc-trim-line-loop" class="nav-link" data-scroll-target="#trim-line-loop"><span class="header-section-number">2.2.6</span> Trim line loop</a></li>
+  </ul></li>
+  <li><a href="#cleat-jacket" id="toc-cleat-jacket" class="nav-link" data-scroll-target="#cleat-jacket"><span class="header-section-number">2.3</span> Cleat Jacket</a>
+  <ul class="collapse">
+  <li><a href="#dress-the-cleat-jacket-edges" id="toc-dress-the-cleat-jacket-edges" class="nav-link" data-scroll-target="#dress-the-cleat-jacket-edges"><span class="header-section-number">2.3.1</span> Dress the cleat jacket edges</a></li>
+  </ul></li>
+  <li><a href="#separation-block" id="toc-separation-block" class="nav-link" data-scroll-target="#separation-block"><span class="header-section-number">2.4</span> Separation block</a></li>
+  <li><a href="#flag-line" id="toc-flag-line" class="nav-link" data-scroll-target="#flag-line"><span class="header-section-number">2.5</span> Flag line</a>
+  <ul class="collapse">
+  <li><a href="#forming-the-ends" id="toc-forming-the-ends" class="nav-link" data-scroll-target="#forming-the-ends"><span class="header-section-number">2.5.1</span> Forming the ends</a></li>
+  <li><a href="#inserting-the-bungie" id="toc-inserting-the-bungie" class="nav-link" data-scroll-target="#inserting-the-bungie"><span class="header-section-number">2.5.2</span> Inserting the bungie</a></li>
+  </ul></li>
+  <li><a href="#stub-line" id="toc-stub-line" class="nav-link" data-scroll-target="#stub-line"><span class="header-section-number">2.6</span> Stub line</a></li>
+  <li><a href="#bar-end-loops" id="toc-bar-end-loops" class="nav-link" data-scroll-target="#bar-end-loops"><span class="header-section-number">2.7</span> Bar End Loops</a></li>
+  <li><a href="#steering-lines" id="toc-steering-lines" class="nav-link" data-scroll-target="#steering-lines"><span class="header-section-number">2.8</span> Steering Lines</a></li>
+  </ul></li>
+  <li><a href="#assembly" id="toc-assembly" class="nav-link" data-scroll-target="#assembly"><span class="header-section-number">3</span> Assembly</a>
+  <ul class="collapse">
+  <li><a href="#bar-assembly-and-threading-line" id="toc-bar-assembly-and-threading-line" class="nav-link" data-scroll-target="#bar-assembly-and-threading-line"><span class="header-section-number">3.1</span> Bar assembly and threading line</a></li>
+  <li><a href="#attaching-the-main-flying-lines" id="toc-attaching-the-main-flying-lines" class="nav-link" data-scroll-target="#attaching-the-main-flying-lines"><span class="header-section-number">3.2</span> Attaching the main flying lines</a></li>
+  <li><a href="#bar-end-loops-1" id="toc-bar-end-loops-1" class="nav-link" data-scroll-target="#bar-end-loops-1"><span class="header-section-number">3.3</span> Bar End Loops</a></li>
+  <li><a href="#steering-line-leaders" id="toc-steering-line-leaders" class="nav-link" data-scroll-target="#steering-line-leaders"><span class="header-section-number">3.4</span> Steering line leaders</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Buggy Bar Book</h1>
+</div>
+
+<div>
+  <div class="description">
+    This is how you build a Buggy Bar.
+  </div>
+</div>
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Philip Chase </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">October 2, 2025</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="overview" class="level1" data-number="1">
+<h1 data-number="1"><span class="header-section-number">1</span> Overview</h1>
+<p>This document describes how to build a Buggy Bar. The Buggy Bar is a kite control bar designed by and for kite buggiers. This bar is targeted specifically at non-jumping land-kiting with a focus on high function and ease of use to keep the flier safe and focused on piloting. This design is released under a Creative Commons license to allow anyone to use the design to build the bar for personal use or resale.</p>
+<div id="fig-finished-bar" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center" alt="Finished Bar">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-finished-bar-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="images/finished-bar.jpg" class="img-fluid quarto-figure quarto-figure-center figure-img" alt="Finished Bar" width="650">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-finished-bar-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1.1: Finished Bar
+</figcaption>
+</figure>
+</div>
+<p>This release replaces the mini-chickenloop with <a href="https://orangekiter.jimdofree.com/kieler-quickrelease/">KQR</a> rings and the flag line end with a loop and ring to retain it within the KQR rings. The KQR components are shown in <a href="#fig-kqr-rings" class="quarto-xref">Figure&nbsp;<span>1.2</span></a> and <a href="#fig-kqr-body" class="quarto-xref">Figure&nbsp;<span>1.3</span></a></p>
+<div id="fig-kqr-rings" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center" alt="KQR rings and ring holder installed in a bar">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-kqr-rings-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="images/kqr_rings_and_holder.jpg" class="img-fluid quarto-figure quarto-figure-center figure-img" alt="KQR rings and ring holder installed in a bar" width="650">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-kqr-rings-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1.2: KQR rings and ring holder installed in a bar
+</figcaption>
+</figure>
+</div>
+<div id="fig-kqr-body" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center" alt="KQR body installed in a harness">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-kqr-body-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="images/kqr_body_installed_In_a_harness.jpg" class="img-fluid quarto-figure quarto-figure-center figure-img" alt="KQR body installed in a harness" width="650">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-kqr-body-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1.3: KQR body installed in a harness
+</figcaption>
+</figure>
+</div>
+<section id="bill-of-materials" class="level2" data-number="1.1">
+<h2 data-number="1.1" class="anchored" data-anchor-id="bill-of-materials"><span class="header-section-number">1.1</span> Bill of materials</h2>
+<ul>
+<li>1 kite control bar: 17” - 20” between the steering lines; a rimless, circular trimline borehole on the kite-side of the bar; a deeply beveled cut left and right of the trimline borehole on the pilot-side of the bar.</li>
+<li>1 CL826-11AN AERO CLEAT FOR 4-6MM ROPES - HARD ANODISED</li>
+<li>2110mm Samson AmSteel-Blue Single Braid Line Diameter: 5/32” (4mm)</li>
+<li>1250mm of 500# - 600# Dyneema (precise specs do not matter)</li>
+<li>4910mm hollow core braided 1.6mm Dyneema with a <em>very</em> loose braid (I use <a href="https://www.amazon.com/dp/B06XTL3K7Z?th=1" class="uri">https://www.amazon.com/dp/B06XTL3K7Z?th=1</a> from emma kites)</li>
+<li>1 Small Stopper Ball Green ~5/32” ID, 16-18mm OD</li>
+<li>1 Medium Stopper Ball Green ~1/4” ID, 25-32mm OD</li>
+<li>1 <a href="https://github.com/pbchase/kite_bar_parts/blob/master/printable/separation_block_v3_8mm_trimline_bore_e90f9fc.stl">Separation block v3 8mm trimline bore Release 1.6.0</a></li>
+<li>1 <a href="https://github.com/pbchase/kite_bar_parts/blob/1.6.0/printable/cleat_bead_cb0d3b8.stl">Cleat Bead release 1.6.0</a></li>
+<li>~260mm of 2mm bungee</li>
+<li>The bar-side rings and ring holder from a <a href="https://orangekiter.jimdofree.com/kieler-quickrelease/">KQR</a>. The KQR uses a 4mm x 25mm (ID) and a 3mm x 20mm (ID) stainless steel ring attached to the trim line with a larks head. A third ring, 3mm x 15mm (ID) is larksheaded to the end of the flag line. Optionally use an <a href="https://www.infexion.eu/seatbelt-quick-release/">IQR</a> instead of the KQR.</li>
+</ul>
+</section>
+<section id="tools-required" class="level2" data-number="1.2">
+<h2 data-number="1.2" class="anchored" data-anchor-id="tools-required"><span class="header-section-number">1.2</span> Tools required</h2>
+<ul>
+<li>Razor blade or other very sharp knife</li>
+<li>Cutting board</li>
+<li>Scissors</li>
+<li>Short wire fid (~150mm)</li>
+<li>Long wire fid (~850mm)</li>
+<li>Cyanoacrylate glue (preferrable thin)</li>
+<li>Cyanoacrylate accelerant (optional)</li>
+<li>Metric tape measure</li>
+<li>Sewing machine with a large needle and high-strength polyester thread, preferably V-46 Dabond 2000 UVR Polyester thread</li>
+<li>A modified presser foot with a 1mm-wide groove aligned with the needle. (useful, but not required)</li>
+<li>Rubber mallet</li>
+<li>Bench vise with wooden jaws or other means of bending 0.025 metal sheet</li>
+<li>Two strong spring clips</li>
+<li>2m long stick and some scrap line to place the flag line under tension</li>
+<li>Adjustable wrench for line stretching</li>
+<li>5/32” drill bit</li>
+<li>1/16” drill bit</li>
+</ul>
+</section>
+</section>
+<section id="component-construction" class="level1" data-number="2">
+<h1 data-number="2"><span class="header-section-number">2</span> Component construction</h1>
+<section id="control-bar" class="level2" data-number="2.1">
+<h2 data-number="2.1" class="anchored" data-anchor-id="control-bar"><span class="header-section-number">2.1</span> Control bar</h2>
+<div id="fig-bare-bars" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center" alt="Bare kite bars">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-bare-bars-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="images/bare-bars.jpg" class="img-fluid quarto-figure quarto-figure-center figure-img" alt="Bare kite bars">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-bare-bars-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2.1: Bare kite bars
+</figcaption>
+</figure>
+</div>
+<p>No specific control bar is required, but there are a few features the bar needs to function properly. The bar should not be any larger than needed. A bar with a 17” center-to-center spacing between the steering lines works for most suitable buggy kites. A 20” spacing is probably the largest you would ever need. The trimline bore needs to be circular and smooth on the kite face of the bar as shown in <a href="#fig-kite-side-borehole" class="quarto-xref">Figure&nbsp;<span>2.2</span></a>. A bore hole diameter of 1/2” (12.5mm) is about ideal. The circular hole allows the bar to spin freely against spherical surface of the cleat bead. The smooth surface around the trimline borehole is more comfortable for gripping the bar at the center to fly with one handed.</p>
+<div id="fig-kite-side-borehole" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center" alt="Kite-side of the bar showing the smooth, round bore holes">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-kite-side-borehole-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="images/kite-side-borehole.jpg" class="img-fluid quarto-figure quarto-figure-center figure-img" alt="Kite-side of the bar showing the smooth, round bore holes" width="650">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-kite-side-borehole-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2.2: Kite-side of the bar showing the smooth, round bore holes
+</figcaption>
+</figure>
+</div>
+<p>The pilot-side of the bore hole needs to be deeply beveled left and right of the trimline borehole as shown in <a href="#fig-pilot-side-borehole" class="quarto-xref">Figure&nbsp;<span>2.3</span></a>. This allows the bar to be sheeted in and out during hard turns. Without the cutouts, the bar could bind in a turn and sheeting changes would be difficult if not impossible.</p>
+<div id="fig-pilot-side-borehole" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center" alt="Pilot-side of a bare bar showing the left and right cuts around the bore">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-pilot-side-borehole-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="images/pilot-side-borehole.jpg" class="img-fluid quarto-figure quarto-figure-center figure-img" alt="Pilot-side of a bare bar showing the left and right cuts around the bore" width="650">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-pilot-side-borehole-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2.3: Pilot-side of a bare bar showing the left and right cuts around the bore.
+</figcaption>
+</figure>
+</div>
+</section>
+<section id="trim-line" class="level2" data-number="2.2">
+<h2 data-number="2.2" class="anchored" data-anchor-id="trim-line"><span class="header-section-number">2.2</span> Trim Line</h2>
+<p>To build the trimline, you will need 2110mm of Amsteel Blue (use only the gray color), 80mm x 105m of insignia cloth (dark colors are better), two 18mm x 3mm nickel-plated neodymium disc magnets, 150mm of 0.095” plastic cord, one small stopper ball and one medium stopper ball.</p>
+<section id="prepping-the-trim-line" class="level3" data-number="2.2.1">
+<h3 data-number="2.2.1" class="anchored" data-anchor-id="prepping-the-trim-line"><span class="header-section-number">2.2.1</span> Prepping the trim line</h3>
+<p>Cut a segment of gray 4mm Amsteel Blue to a length of 2110mm with a fresh razor blade to get a clean cut. Thin each end of the line in preparation for the end fittings. This is easy by pinning the tip to a cutting board with a sharp razor blade and pullng the tip through the blade. do this three times on each end at 5mm, 15mm and 25mm distance from the end.</p>
+</section>
+<section id="upper-end-of-the-trim-line" class="level3" data-number="2.2.2">
+<h3 data-number="2.2.2" class="anchored" data-anchor-id="upper-end-of-the-trim-line"><span class="header-section-number">2.2.2</span> Upper end of the trim line</h3>
+<p>The upper end of the trim line will form is designed to be easily gripped for trim control, firm-gripping in the cleat, and easily tethered when not being handled. The firm grip is ensured by adding an inner core of dyneema to the upper half of the trim line. The tethering is done via a pair of magnets attached to the trimline with a wrap of insignia cloth. The insignia cloth is reinforced with a shaped piece of plastic cord. A pair of stopper balls provide a stop at the cleat and a handle just above the magnets. The a completed end is visible in <a href="#fig-finished-end-of-trimline" class="quarto-xref">Figure&nbsp;<span>2.4</span></a></p>
+<div id="fig-finished-end-of-trimline" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center" alt="Grip end of the trim line with balls offset to show knots (above) and thread end (below)">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-finished-end-of-trimline-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="images/finished-end-of-trimline.jpg" class="img-fluid quarto-figure quarto-figure-center figure-img" alt="Grip end of the trim line with balls offset to show knots (above) and thread end (below)" width="650">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-finished-end-of-trimline-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2.4: Grip end of the trim line with balls offset to show knots (above) and thread end (below)
+</figcaption>
+</figure>
+</div>
+</section>
+<section id="adding-the-trim-line-core" class="level3" data-number="2.2.3">
+<h3 data-number="2.2.3" class="anchored" data-anchor-id="adding-the-trim-line-core"><span class="header-section-number">2.2.3</span> Adding the trim line core</h3>
+<p>To add the trim line core, mark the trim line at 100mm<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> and 1350mm from one end. Cut 1250mm of 500# dyneema. Run the long wire inside the trim line from the one mark to the other. Clip a clothes pin to one end of the dyneema core and pull the other end through the trim line. Milk the trim line tight onto the new core ensuring each end of the core buries inside the trim line near the marks.</p>
+</section>
+<section id="forming-the-magnetic-trim-line-tail" class="level3" data-number="2.2.4">
+<h3 data-number="2.2.4" class="anchored" data-anchor-id="forming-the-magnetic-trim-line-tail"><span class="header-section-number">2.2.4</span> Forming the magnetic trim line tail</h3>
+<p>Form the wrap for the magnets by cutting a strip of sailmaker’s insignia cloth according to the dimensions shown in <a href="#fig-magnetic-trimline-tails-9" class="quarto-xref">Figure&nbsp;<span>2.5</span></a> to wrap the magnets.</p>
+<div id="fig-magnetic-trimline-tails-9" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center" alt="Insignia cloth patch to hold trimline magnets">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-magnetic-trimline-tails-9-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="images/magnetic-trimline-tails-9.jpg" class="img-fluid quarto-figure quarto-figure-center figure-img" alt="Insignia cloth patch to hold trimline magnets" width="650">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-magnetic-trimline-tails-9-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2.5: Insignia cloth patch to hold trimline magnets
+</figcaption>
+</figure>
+</div>
+<p>To make the reinforcement for the wrap, cut a segment of round, 0.095” diameter plastic weed-whacker cord 150mm long to wrap around the magnets and up the trim line. Bend the plastic cord until the ends meet, then clamp the ends together with a spring clip. Heat the middle of the plastic cord with a low flame. Dance the cord through the flame flipping and turning as you go to assure even heating. When the bend relaxes, form it around a 16mm x 36mm mandrel of CPVC pipe. With the plastic pulled tight against the mandrel, cool the plastic in tap water. This will lock the new shape in place.</p>
+<p>The mandrel can be made from 5/8” diameter CPVC piping, a few strips cut from a plastic bucket to form a spacer and two screws to hold the parts together. The assembled mandrel is shown in <a href="#fig-plastic-cord-mandrel" class="quarto-xref">Figure&nbsp;<span>2.6</span></a> and <a href="#fig-plastic-cord-mandrel-end-view" class="quarto-xref">Figure&nbsp;<span>2.7</span></a></p>
+<div id="fig-plastic-cord-mandrel" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center" alt="Mandrel for forming the plastic cord that surrounds the magnets">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-plastic-cord-mandrel-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="images/plastic-cord-mandrel.jpg" class="img-fluid quarto-figure quarto-figure-center figure-img" alt="Mandrel for forming the plastic cord that surrounds the magnets" width="650">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-plastic-cord-mandrel-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2.6: Mandrel for forming the plastic cord that surrounds the magnets
+</figcaption>
+</figure>
+</div>
+<div id="fig-plastic-cord-mandrel-end-view" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center" alt="End view of the mandrel">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-plastic-cord-mandrel-end-view-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="images/plastic-cord-mandrel-end-view.jpg" class="img-fluid quarto-figure quarto-figure-center figure-img" alt="End view of the mandrel" width="650">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-plastic-cord-mandrel-end-view-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2.7: End view of the mandrel
+</figcaption>
+</figure>
+</div>
+<p>Taper the last 15mm of the tips of the plastic cord so it can fit more closely against the trim line.</p>
+<p>Thread a small stopper ball and then a medium stopper ball on to the trim line and slide them a meter up the line to get them out of the way. We’ll return to these after the magnets are installed.</p>
+<p>To assemble the loose end of the trimline, place 55mm of the unfinished end of the Amsteel on the tapered end of the magnet wrap. In your hand, place two 18mm x 3mm disc magnets edge-to-edge and align the polarity. Carefully place the pair of magnets edge-to-edge at the tip of the Amsteel aligning the long axis of the magnets with the axis of the Amsteel. It can be helpful to peel the backing of the insignia cloth incrementally, exposing only the glue needed to install the next component.</p>
+<p>Place the curve of the plastic cord closely around the magnets. The tapered ends of the plastic cord should fit closely around the trim line.</p>
+<p>Fold the cloth around magnets and trim line folding one side completely and then the other. The folds should be parallel to the trim line axis. The cloth must lay flat over the magnets. Because the trim line is narrower than the magnets, a crease will form where the magnets meet the trim line. This crease must not be <em>on</em> the magnets. Make sure the crease is <em>above</em> the magnets. Pinch the cloth closed below the magnets and round the end of the pinched-off fabric.</p>
+<p>Stitch the magnet-wrap to the Amsteel so the cloth won’t creep in use. Use a long straight stitch and dark thread to secure the wrap. The attractive force of the magnets is so high, it can make the trim difficult to work in a sewing machine. To reduce this effect, cut two small rectangles of cardboard from a cereal box and place them under the magnets. The increased distance between the magnets and the steel deck of the sewing machine should make the forces manageable. Be careful to not hit the magnets or the plastic cord with the sewing needle lest bad things happen.</p>
+</section>
+<section id="knots-and-balls" class="level3" data-number="2.2.5">
+<h3 data-number="2.2.5" class="anchored" data-anchor-id="knots-and-balls"><span class="header-section-number">2.2.5</span> Knots and Balls</h3>
+<p>Tie an overhand knot at the point where the magnet wrap meets the Amsteel. The knot should be just barely above the plastic cord buried inside the magnet wrap. Push the medium stopper ball you threaded onto the stopper line a few steps earlier down on this knot. If the ball does not jam tight on the knot, retie the knot as a figure-eight to make it fatter and improve the fit against the inside of the ball.</p>
+<p>Mark the trimline 65mm above the top of the medium ball. Tie an overhand knot in the trimline just above that mark. Push the <em>small</em> stopper ball down on this knot. Again, if the ball is not tight on the knot, retie it as a figure-eight knot to adjust the fit. The finished product can be seen in <a href="#fig-finished-end-of-trimline" class="quarto-xref">Figure&nbsp;<span>2.4</span></a></p>
+</section>
+<section id="trim-line-loop" class="level3" data-number="2.2.6">
+<h3 data-number="2.2.6" class="anchored" data-anchor-id="trim-line-loop"><span class="header-section-number">2.2.6</span> Trim line loop</h3>
+<p>The lower end of the trim line is finished with a large loop formed with a brummel splice. The loop is designed receive the pair of rings used by the <a href="https://orangekiter.jimdofree.com/kieler-quickrelease/">KQR</a>. The loop needs to be about 150mm in diameter. Given the line diameter, the buried segment needs to be 250mm. To form this, mark the lower end of the trim line at 250mm, 400mm, and 720mm from the tip of the lower end of the trim line. Pierce the line at the 250mm mark, and push a loop of the upper portion of the line through the pierced hole. After pulling it through, clip a clothes pin or tie a line to the loop to assure it does not revert. Run the long fid from the 720mm mark to the 400mm mark. Put the tail through the fid at 400mm and pull the tail out at 700mm. Dress the splice.</p>
+</section>
+</section>
+<section id="cleat-jacket" class="level2" data-number="2.3">
+<h2 data-number="2.3" class="anchored" data-anchor-id="cleat-jacket"><span class="header-section-number">2.3</span> Cleat Jacket</h2>
+<p>The Aero Cleat requires a jacket of ferromagnetic stainless steel sheet to create a tether point for the trimline tail. Make a template from the image in <a href="#fig-cleat-jacket-template.png" class="quarto-xref">Figure&nbsp;<span>2.8</span></a> or reference the <a href="https://github.com/pbchase/kite_bar_parts/blob/master/cleat_jacket_template.svg">original design</a>. Trace the pattern onto a sheet of 0.025” thick 430 stainless steel sheet. Only use 430 stainless steel for the cleat jacket; other grades of stainless steel will not attract the magnets in the trimline. Cut the shape from the metal sheet, drill out the two holes with a 5/32” bit and ease all the edges with a metal file. Most of the edges will be on grippable surfaces, so do a good job of easing them.</p>
+<p>Disassemble the cleat and reassemble it with metal sheet between the two sections of the cleat. Bend the metal sheet around the metal portion of the Aero Cleat. To do this, clamp one side of the jacket in a vise. Use a block of wood and a mallet to fold the other side against metal side of the cleat. Flip the cleat over to expose the unfolded wing of the jacket and clamp the cleat in the vise. Again, use the block of wood and a mallet to fold the remaining wing. Remove the cleat from the vise, lay it flat on a table top and use the block and mallet to crease the folds.</p>
+<p>If you don’t have a bench vise or a mallet, you can fold the wings with a pair of boards and pair of boots. Place the re-assembled cleat on a board on the ground, with the metal cleat side up. Step carefully on the metal part of the cleat to fold the lower wing of the jacket against the metal of the cleat. Flip the cleat over to place the remaining wing against the wood. Again, step on the cleat to fold the wing against the metal of the cleat. Put a second board on top of the cleat and stomp it a few times to finish the crease of the jacket.</p>
+<div id="fig-cleat-jacket-template.png" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center" alt="Template for making an Aero Cleat Jacket">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-cleat-jacket-template.png-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="images/cleat-jacket-template.png" class="img-fluid quarto-figure quarto-figure-center figure-img" alt="Template for making an Aero Cleat Jacket" width="650">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-cleat-jacket-template.png-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2.8: Template for making an Aero Cleat Jacket
+</figcaption>
+</figure>
+</div>
+<section id="dress-the-cleat-jacket-edges" class="level3" data-number="2.3.1">
+<h3 data-number="2.3.1" class="anchored" data-anchor-id="dress-the-cleat-jacket-edges"><span class="header-section-number">2.3.1</span> Dress the cleat jacket edges</h3>
+<p>Following the above instructions, the edges of the cleat jacket are never tight against the cleat. If you can cut a low block of wood the exact width of the cleat, you can fix this by adding an extra bend in the jacket. Follow these steps if you are able.</p>
+<p>Form a shaping block by cutting a strip of wood a little bit longer than the cleat, exactly its width, but only 1/2 its height. Bevel one end to follow the descending shape at the top of the cleat. The wood mandrel should be half the cleat height along the length of the cleat.</p>
+<p>Remove the jacket from the AeroCleat. Slide the wood inside the jacket aligning the low end of the jacket with the low end of the block. Clamp the assembly in a vise with the jacket upright and the top of the block level with the top of the vise jaws. Use a mallet to slightly bend each side of the jacket at the mid-line. Bend jacket until the top is narrower than the cleat, but not by much. Remove the block from the jacket and reassemble the jacket and cleat. The edges of the jackets should be tight against the cleat now.</p>
+</section>
+</section>
+<section id="separation-block" class="level2" data-number="2.4">
+<h2 data-number="2.4" class="anchored" data-anchor-id="separation-block"><span class="header-section-number">2.4</span> Separation block</h2>
+<p>The juncture of the flying lines and the trim line is managed by the <em>separation block</em> as shown in <a href="#fig-separation-block" class="quarto-xref">Figure&nbsp;<span>2.9</span></a></p>
+<div id="fig-separation-block" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center" alt="Separation block">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-separation-block-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="images/separation_block_V3.png" class="img-fluid quarto-figure quarto-figure-center figure-img" alt="Separation block" width="650">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-separation-block-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2.9: Separation block
+</figcaption>
+</figure>
+</div>
+<p>This component provides a curved path to serve as a pully for the trim line and a guide path for each of the main flying lines. The <a href="https://github.com/pbchase/kite_bar_parts/blob/master/printable/separation_block_v3_8mm_trimline_bore_e90f9fc.stl">3-D model</a> for this component is accessible in the <a href="https://github.com/pbchase/kite_bar_parts">Kite Bar Barts</a> repository. Should you print this model, use a 1/8” drill to clean out the flying-line bore holes before installation. Use a sharp blade to deburr the sharp edges of the pulley hole. These adjustments simplify assembly.</p>
+</section>
+<section id="flag-line" class="level2" data-number="2.5">
+<h2 data-number="2.5" class="anchored" data-anchor-id="flag-line"><span class="header-section-number">2.5</span> Flag line</h2>
+<p>The <em>flag line</em> allows the kite to be flagged out via one of the top lines. It bridges the distance from the flying line at the underside of the separation block to the underside of the kite bar. The line is about 1400mm of hollow core braided 1.6mm Dyneema that encloses about 400mm of 2mm bungie. A short loop is incorporated into each end. This design allows the flag line to stay taught whether the bar is trimmed in or out. The Dyneema jacket can handle the loads experienced during release to assure a clean flag-out without damage to the flag line. The dimensions for the flag line are tightly constrained by the need to maintain line tension throughout the trim range. They can be calculated using a copy of the Google Sheet <a href="http://tinyurl.com/y4k5chgv">kite bar elastic flag line length calculations</a> (<a href="http://tinyurl.com/y4k5chgv" class="uri">http://tinyurl.com/y4k5chgv</a>)</p>
+<section id="forming-the-ends" class="level3" data-number="2.5.1">
+<h3 data-number="2.5.1" class="anchored" data-anchor-id="forming-the-ends"><span class="header-section-number">2.5.1</span> Forming the ends</h3>
+<p>To build the flag line, cut 1370mm of hollow core braided 1.6mm Dyneema. Mark each end at 45mm, 65mm, 85mm, and 140mm. The 65mm will be the end of the loop while the 45mm and 85mm marks will align at the top of the loop. Make a brummel splice at one end to secure that loop.</p>
+<p>The opposite end of the flag line is more complex owing to its need to secure the flying line against the separation block. The 1/16” Ultrex is not large enough to not pull through the separation block under load. To prevent that, bury a segment of Ultrex inside the loop at this end of the flag line to make it fatter. Start by forming the first loop of the brummel splice. Then splice a scrap of 1.6mm Dyneema about 40mm long into the flag line between the 45mm and 85mm marks. Complete the brummel splice, and cut the ends off the short added segment and bury the remainder.</p>
+</section>
+<section id="inserting-the-bungie" class="level3" data-number="2.5.2">
+<h3 data-number="2.5.2" class="anchored" data-anchor-id="inserting-the-bungie"><span class="header-section-number">2.5.2</span> Inserting the bungie</h3>
+<p>Unspool a meter of 2mm bungie. You can leave it attached to spool for this step. Add a threading end of insignia cloth to the free end of the bungie. A rectangle of peel-and-stick insignia cloth about 8mm x 40mm will work well. Measure 390mm from the back-end of the threading end and mark this point with a narrow strip of insignia cloth. Route a very long fid inside the flag line from the near end of one loop to the near end of the other. The fid should occupy the entire length of the otherwise unoccupied flag line. Pull the 2mm bungie through the jacket and out the opposite end until only the thread end cloth is visible. Clamp this end with a spring clip. Align the strip of insignia cloth with the other entry-point into the flag line jacket. Clamp this end with another other spring clip.</p>
+<p>Use a narrow, 2m long stick and some cord to stretch the flag line. Old tubular tent poles or kite spars serve well as the stick. 300-600lb test flying line run inside the tube makes a great stretching cord. Anchor the flag line at one end of the stick. Use cord affixed to the opposite end of the stick to put the flag line under tension. Start milking the jacket of the flag line back and forth to evenly distribute the jacket and bungie. Retension the flag line and milk it again. Continue milking the jacket back and forth and retensioning until it stops elongating. With the flag line still stretched, remove the clips one at a time and stitch about 30mm of each end of the buried bungee to lock it to the Dyneema. Cut the bungee where it emerges at each end. Be careful not to cut the Dyneema. The bungee must be fully hidden inside the jacket to assure smooth operation.</p>
+<p>With the flag still on the stretcher, mark it every 100mm along the bungee segment. Put a few stitches at each mark to lock the Dyneema to the bungee along its length.</p>
+</section>
+</section>
+<section id="stub-line" class="level2" data-number="2.6">
+<h2 data-number="2.6" class="anchored" data-anchor-id="stub-line"><span class="header-section-number">2.6</span> Stub line</h2>
+<p>The non-flagging flying line needs to be terminated at the underside of the separation block in the same manner as the flying line that <em>does</em> flag. This is accomplished with a short loop called the <em>stub line</em>. To match the upper end of the flag line, the stub line is made from the same hollow core braided 1.6mm Dyneema.</p>
+<p>Mark the 300mm line segment 130mm from one end. Use a wire fid to splice the 130mm segment inside the 170mm segment that remains. The resulting segment will be about 155mm long. The segment is mostly double thickness with about 30mm of single thickness line on the end. Apply cyanoacrylate glue or a small wrap of insignia cloth to the unfinished end. Fold the 155mm segment in half and tie an overhand knot to form a small loop. The finished product is about 50mm long.</p>
+</section>
+<section id="bar-end-loops" class="level2" data-number="2.7">
+<h2 data-number="2.7" class="anchored" data-anchor-id="bar-end-loops"><span class="header-section-number">2.7</span> Bar End Loops</h2>
+<p>The kite bar requires a loop on each end to affix the steering lines. These loops require two 350mm segments of hollow core braided 1.6mm Dyneema. To make them, fold each loop in half and tie an overhand knot at the end with about 10mm of tail. The length of these two lines <em>must</em> match. To achieve this, hook the loop ends around a rounded component on a bench vise. Gently pinch the line with an adjustable wrench on the loop side of the knots. Use the wrench to pull the knots evenly while you pull the ends with standard pliers. With the knot complete and the lines equal in length, put little cyanoacrylate glue on the line ends to prevent fraying. See the detail diagram in <a href="#fig-bar-end-loop" class="quarto-xref">Figure&nbsp;<span>2.10</span></a></p>
+<div id="fig-bar-end-loop" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center" alt="Bar end loop">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-bar-end-loop-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="images/bar-end-loop.jpg" class="img-fluid quarto-figure quarto-figure-center figure-img" alt="Bar end loop" width="650">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-bar-end-loop-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2.10: Bar end loop
+</figcaption>
+</figure>
+</div>
+</section>
+<section id="steering-lines" class="level2" data-number="2.8">
+<h2 data-number="2.8" class="anchored" data-anchor-id="steering-lines"><span class="header-section-number">2.8</span> Steering Lines</h2>
+<p>The steering lines run from the bar end loops to the ends of the back lines. They require two 1165mm segments of hollow core braided 1.6mm Dyneema. Mark one end of each segment at 110, 190, 270, and 410mm. Use these marks to create a brummel splice with an 80mm loop. See the loop details in <a href="#fig-steering-line-loop-details" class="quarto-xref">Figure&nbsp;<span>2.11</span></a></p>
+<div id="fig-steering-line-loop-details" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center" alt="Steering line loop details">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-steering-line-loop-details-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="images/steering-line-loop-details.png" class="img-fluid quarto-figure quarto-figure-center figure-img" alt="Steering line loop details" width="650">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-steering-line-loop-details-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2.11: Steering line loop details
+</figcaption>
+</figure>
+</div>
+<p>With the loops complete, stretch the pair of lines evenly and mark both lines at about 50mm from the non-loop end. Tie an overhand knot in each line at the mark. Gently pinch the line with an adjustable wrench on the loop side of the knots. Use the wrench to pull the knots evenly while you pull the ends with standard pliers. With the knot complete and the lines equal in length, tie a second overhand knot close to the first knot to act as a stopper for the first. Then put a little cyanoacrylate glue or a small wrap of insignia cloth on the line ends to prevent fraying.</p>
+</section>
+</section>
+<section id="assembly" class="level1" data-number="3">
+<h1 data-number="3"><span class="header-section-number">3</span> Assembly</h1>
+<section id="bar-assembly-and-threading-line" class="level2" data-number="3.1">
+<h2 data-number="3.1" class="anchored" data-anchor-id="bar-assembly-and-threading-line"><span class="header-section-number">3.1</span> Bar assembly and threading line</h2>
+<p>To thread the trim line, put the threaded end through the cleat, entering at the jam side. Exit the cleat at the top, routing up through the separation block. Reenter the cleat and go through its serpentine path. Leave just enough line above the cleat to provide the desired trim. A spring clamp applied to both sides of the trimline just above the cleat is a good way to maintain the correct amount of trim while threading the trimline. Route the trimline through the cleat bead. Go down through the center of the bar. Attach the KQR rings and ring holder with a larkshead around the rings, but not the holder. The ring holder holds the rings in the two grooves printed on its concave side.</p>
+<p>You’ll want to verify you can reach the trimline end under normal flying conditions. It’s easier to assess the cleat position before the flying lines are attached so pause the assembly for a moment to check and adjust the cleat position. To do this, put your harness on, clip the chickenloop into the harness and have a friend pull on the trim line by the separation block. They should pull the bar to your side about 30 degrees above horizontal. Verify you can reach the jaws of the cleat and grab the trim line tail without over-reaching. If you have to stretch to reach the tail, the cleat is too far away. You can move it closer by moving some of the trim line up through the cleat. For each centimeter you need to move the cleat down, you’ll need to move two centimeters of line through the cleat toward the kite. Making this adjustment is a bit tedious, but the trim line tail must be in easy reach under load.</p>
+<p>With the cleat position verified, have a friend help you put the trim line in tension. Then slide the cleat bead up to the cleat. Look at the cleat from the pilot’s point of view and rotate the cleat until the jaws are up. Check the rotation of the cleat bead so that the flag line guide path is on the lower left side of the cleat. Pull down hard on the trim as you push the bead into the cleat. Maintain this pressure as you use a 3/16” Allen wrench to sink the cleat bead set screw into the trim line. This will lock the bead in place on the base of the Aerocleat.</p>
+</section>
+<section id="attaching-the-main-flying-lines" class="level2" data-number="3.2">
+<h2 data-number="3.2" class="anchored" data-anchor-id="attaching-the-main-flying-lines"><span class="header-section-number">3.2</span> Attaching the main flying lines</h2>
+<p>With the trim line routed, the flying lines can be attached. Route the right-side flying line down through the separation block and attach the stub line stopper to the end-loop of the flying line with a larks head to retain the flying line in the stopper.</p>
+<p>Route the left-side flying line through the remaining hole in the separation block. Continue routing it through the cleat bead, the bar, and the smaller KQR ring. Attach a 3mm x 15mm (ID) ring to the lower end of the flag line. Attach the flag line to the flying line with a larks head. Pull flag line up through the bar and bead with the flying line. The routed lines should look like <a href="#fig-flag-line-at-separation-block" class="quarto-xref">Figure&nbsp;<span>3.1</span></a> at the separation block. The over-all assembly should look like <a href="#fig-upper-section-of-assembled-bar" class="quarto-xref">Figure&nbsp;<span>3.2</span></a></p>
+<div id="fig-flag-line-at-separation-block" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center" alt="The flag line meets the flying line.">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-flag-line-at-separation-block-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="images/flag-line-at-separation-block.jpg" class="img-fluid quarto-figure quarto-figure-center figure-img" alt="The flag line meets the flying line." width="650">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-flag-line-at-separation-block-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;3.1: The flag line meets the flying line.
+</figcaption>
+</figure>
+</div>
+<div id="fig-upper-section-of-assembled-bar" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center" alt="Assembled bar">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-upper-section-of-assembled-bar-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="images/upper-section-of-assembled-bar.jpg" class="img-fluid quarto-figure quarto-figure-center figure-img" alt="Assembled bar" width="650">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-upper-section-of-assembled-bar-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;3.2: Assembled bar
+</figcaption>
+</figure>
+</div>
+</section>
+<section id="bar-end-loops-1" class="level2" data-number="3.3">
+<h2 data-number="3.3" class="anchored" data-anchor-id="bar-end-loops-1"><span class="header-section-number">3.3</span> Bar End Loops</h2>
+<p>Pull each bar end loop through one of the holes at the ends of the bar. Route the loop from the pilot-side of the bar to the kite side so the knots are left on the pilot side. Make sure both sides of the loop are even and the knot sits flush against the back of the bar.</p>
+</section>
+<section id="steering-line-leaders" class="level2" data-number="3.4">
+<h2 data-number="3.4" class="anchored" data-anchor-id="steering-line-leaders"><span class="header-section-number">3.4</span> Steering line leaders</h2>
+<p>Use a larks head to attach the loop of each steering line leader to the loop of its steering line. Then attach the knot of the leader to the loop of the bar-end loop with a larks head. Keeping the knot of the leader line next to the bar minimizes the risk of snagging the steering lines in the components of the bar.</p>
+<p>With all the flying lines attached, the trim control let all the way out and the bar pulled all the way back, the tips of all four flying lines should converge to the same point. If they aren’t within 50mm of matching, you should adjust the steering lines at the bar to make them a closer match.</p>
+
+
+</section>
+</section>
+<section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn1"><p>Consider shifting or extending the core towards the magnetic end to capture it in the stitching at that end.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

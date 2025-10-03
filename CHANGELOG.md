@@ -4,6 +4,10 @@ All notable changes to the pbchase's web site will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), 
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
+## [0.6.0] - 2025-10-02
+### Added
+- Add buggy_bar_v2 and a post to announce it (Philip Chase)
+
 ## [0.5.0] - 2019-07-09
 ### Added
 - Add the Peter Lynn ARC Setup FAQ (Philip Chase)
