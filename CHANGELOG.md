@@ -4,6 +4,14 @@ All notable changes to the pbchase's web site will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), 
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
+## [0.7.0] - 2026-06-07
+### Added
+- Add CLAUDE.md to guide AI-assisted development (Philip Chase)
+
+### Changed
+- Add csv, base64, and bigdecimal gems for Ruby 3.4 compatibility (Philip Chase)
+- Bump braces, minimatch, and picomatch dependencies (dependabot)
+
 ## [0.6.0] - 2025-10-02
 ### Added
 - Add buggy_bar_v2 and a post to announce it (Philip Chase)
