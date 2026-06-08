@@ -16,6 +16,11 @@ source "https://rubygems.org"
 gem "jekyll"
 gem "minimal-mistakes-jekyll"
 
+# Ruby 3.4 removed these from the default gems; jekyll and its deps still require them
+gem "csv"
+gem "base64"
+gem "bigdecimal"
+
 # The following plugins are automatically loaded by the theme-gem:
 #   gem "jekyll-paginate"
 #   gem "jekyll-sitemap"
