@@ -4,6 +4,14 @@ All notable changes to the pbchase's web site will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), 
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
+## [0.8.0] - 2026-06-12
+### Added
+- Add buggy_bar_v2.1.0 post and assets (Philip Chase)
+
+### Changed
+- Fix typos in buggy-bar-v2 post (Philip Chase)
+- Update index.html hero image to JIBE 2024 photo (Philip Chase)
+
 ## [0.7.0] - 2026-06-07
 ### Added
 - Add CLAUDE.md to guide AI-assisted development (Philip Chase)
